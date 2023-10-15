@@ -661,7 +661,7 @@ body.filtering .grid .item {
 }
 
 .grid .item:hover .thumb:after {
-    opacity: .2
+    opacity: .6
 }
 
 .grid .item:hover .caption:after {
@@ -1002,4 +1002,26 @@ ul.tag-list li {
 .label:hover {
     opacity: .5;
     color: #000!important
+}
+
+.grid a:hover .inner .thumb .thumb-caption{
+    display: block;
+}
+
+.thumb-caption {
+    display: none;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    margin-right: 15px;
+    color: #ffffff;
+    z-index: 1;
+    font-family: Roboto,Helvetica Neue,Helvetica,sans-serif;
+    font-size: 1.0em;
+}
+
+@media screen and (max-width: 600px) {
+    .thumb-caption {
+      visibility: hidden;
+    }
 }
